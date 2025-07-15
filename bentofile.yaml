@@ -1,0 +1,19 @@
+service: "service:yolo11x"
+labels:
+  owner: caovd
+  stage: dev
+include:
+ - "*.py"
+ - "*.pt"
+ - "*.onnx"
+ - "*.engine"
+python:
+  requirements_txt: "requirements.txt"
+docker:
+  python_version: "3.11"
+  system_packages:
+    - libglib2.0-0
+    - libsm6
+    - libxext6
+    - libxrender1
+    - libgl1-mesa-glx
