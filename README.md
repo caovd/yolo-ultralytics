@@ -1,10 +1,9 @@
-# Containerise a YOLO model by Ultralytics
+# Ultralytics's YOLO model containerization for model deployment on HPE MLIS
 Containerize and deploy a YOLO model by Ultralytics on Kubernetes using BentoML.
 
 ## Overview
 
 This project containerizes a YOLOv11 object detection model using BentoML for easy deployment and scaling. The service provides REST API endpoints for object detection inference.
-For inference, e.x, on HPE MLIS.
 
 **Note**: This method has been tested with YOLOv11 and might also work with YOLOv12 models. 
 
