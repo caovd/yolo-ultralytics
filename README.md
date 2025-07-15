@@ -40,8 +40,8 @@ This project containerizes a YOLOv11 object detection model using BentoML for ea
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/caovd/yolov11-ultralytics-mlis.git
-cd yolov11-ultralytics-mlis
+git clone https://github.com/caovd/yolo-ultralytics.git
+cd yolo-ultralytics
 ```
 
 2. Install dependencies:
@@ -67,12 +67,12 @@ bentoml serve service:yolov11x --reload
 
 1. Build the Docker image:
 ```bash
-docker build -t caovd/yolov11x:latest .
+docker build -t caovd/yolo-ultralytics:latest .
 ```
 
 2. Run the container:
 ```bash
-docker run -p 3000:3000 caovd/yolov11x:latest
+docker run -p 3000:3000 caovd/yolo-ultralytics:latest
 ```
 
 ## API Usage
@@ -121,7 +121,7 @@ The service is configured to use 1 GPU by default. Modify the `resources` parame
 The container is available on Docker Hub:
 
 ```bash
-docker pull caovd/yolov11x:latest
+docker pull caovd/yolo-ultralytics:latest
 ```
 
 ### Kubernetes
@@ -141,7 +141,7 @@ Deploy using the provided Kubernetes manifests (coming soon).
 
 ### Environment Variables
 
-- `YOLO_MODEL`: Model name accepted by Ultralytics YOLO() (default: yolov11x.pt)
+- `YOLO_MODEL`: Model name accepted by Ultralytics's YOLO(...) (default: yolo11x.pt)
 
 ## License
 
